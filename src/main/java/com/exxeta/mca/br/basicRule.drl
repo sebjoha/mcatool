@@ -1,0 +1,9 @@
+package test;
+import com.exxeta.mca.model.Position;
+
+rule "mapper"
+when
+Position ( amount < 100 )
+then
+System.out.println("Position balance is less than 100");
+end
